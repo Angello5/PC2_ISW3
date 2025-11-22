@@ -24,6 +24,10 @@ public class Pedido {
             return false;
         }
 
+        /*
+        por regla de negocio es porque .isActivo() es booleano
+        */
+
         if (!producto.isActivo()) {
             return false;
         }

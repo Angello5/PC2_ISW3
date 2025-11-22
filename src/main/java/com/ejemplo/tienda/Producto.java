@@ -21,7 +21,7 @@ public class Producto {
                     boolean descuentoAplicable) {
 
         if (sku == null || sku.isBlank()) {
-            throw new IllegalArgumentException("El sku no puede ser nulo ni vacío");
+            throw new IllegalArgumentException("El sku no puede ser nulo ni vacio");
         }
         if (precio < 0) {
             throw new IllegalArgumentException("El precio no puede ser negativo");
@@ -114,8 +114,7 @@ public class Producto {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Producto)) return false;
-        Producto producto = (Producto) o;
+        if (!(o instanceof Producto producto)) return false;
         return sku.equals(producto.sku);
     }
 
